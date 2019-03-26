@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Yuka Nishijima | Front-End Developer</title>
+    <!-- Google Font -->
+          <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Montserrat|Tenor+Sans" rel="stylesheet">
+
+    <!-- CSS  -->
+          <link rel="stylesheet" href="https://yukanishijima.github.io/yukanishijima.github.io/styles.css">
+    <!-- Responsive Images -->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <script src="https://yukanishijima.github.io/yukanishijima.github.io/script.js"></script>
+
+
+    <header>
+
+        <input id="burger" type="checkbox" class="unshown">
+          <label for="burger" id="nav-open">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        <label id="nav-back" for="burger" class="unshown"></label>
+
+        <ul class="nav">
+
+          <div class="message">
+            <p>Thank you for visiting! </p>
+            <p>I'm a front-end web developer, based in Toronto Canada.</p>
+            <p>My website is launching soon. In the meantime, feel free to have a look at my <span class="underline"><a href="https://hidamariphotography.com">work</a></span> or drop me a line at: </p>
+            <p> hello@yukanishijima.com</p>
+          </div>
+
+          <li><a href="">About</a></li>
+          <li><a href="">Skills</a></li>
+          <li><a href="" >Portfolio</a></li>
+          <li><a href="">Contact</a></li>
+
+        </ul><!--end of .nav-->
+
+    </header>
+
+  <main>
+
+    <div class="container">
+    <picture>
+      <source media="(max-width: 480px)"
+       srcset="/images/wall_480px_C.jpg 1x,
+                  /images/wall_1000px_C.jpg 2x,
+                  /images/wall_1600px_C.jpg 3x">
+      <source media="(max-width: 750px)"
+       srcset="/images/wall_1000px_C.jpg 1x,
+                  /images/wall_1600px_C.jpg 2x">
+      <source srcset="/images/wall_1600px_C.jpg">
+
+      <img src="/images/wall_1200px_C.jpg"
+            alt="wall" border="0" class="image">
+    </picture>
+
+    <div class="title">
+      <h1>Yuka <br>Nishijima</h1>
+      <p><span id="fragment1">Front-End Developer</span>
+            <span id="fragment2">Digital Creative</span>
+            <span id="fragment3">Aspiring Minimalist</span>
+      </p>
+    </div><!-- end of title -->
+
+
+  </div><!-- end of container -->
+
+
+  </main>
+  </body>
+</html>
