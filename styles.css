@@ -97,7 +97,7 @@ label:hover {
   text-align: left;
   overflow: auto;
   height: 100vh;
-  width: 330px;
+  width: 320px;
   max-width: 90vw;
   background-color: rgba(255,250,250,0.8); /* snow */
   top: 0px;
@@ -303,11 +303,16 @@ header > .nav > li {
   margin-bottom: 25px;
 }
 .underline {
-  background: linear-gradient(transparent 60%, #e69bef 60%);
-}
-.underline > a {
+  font-size: 16px;
+  background: linear-gradient(transparent 60%, #ebbbf1 60%);
   text-decoration: none;
-  color: rgba(0,0,0, 0.9); /* black */
+  color: rgba(0,0,0, 0.7); /* black */
+}
+.underline_blue {
+  font-size: 16px;
+  background: linear-gradient(transparent 60%, #abc9f5 60%);
+  text-decoration: none;
+  color: rgba(0,0,0, 0.7); /* black */
 }
 @media screen and (min-width: 840px) {
   #burger:checked ~ #nav-back {
