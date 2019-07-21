@@ -1,92 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136326389-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-136326389-3');
-</script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136326389-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <meta charset="UTF-8">
-    <title>Yuka Nishijima | Front-End Developer</title>
-    <!-- Google Font -->
-          <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Montserrat|Tenor+Sans" rel="stylesheet">
+    gtag('config', 'UA-136326389-3');
+  </script>
 
-    <!-- CSS  -->
-          <link rel="stylesheet" href="https://yukanishijima.github.io/yukanishijima.github.io/styles.css">
-    <!-- Responsive Images -->
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuka Nishijima | Front-End Developer</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Montserrat:300,400|Tenor+Sans" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- CSS  -->
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-  <body>
-    <script src="https://yukanishijima.github.io/yukanishijima.github.io/script.js"></script>
+<body>
 
+  <header>
 
-    <header>
+    <input id="burger" type="checkbox" class="unshown">
+    <label for="burger" id="nav-open">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <label id="nav-back" for="burger" class="unshown"></label>
 
-        <input id="burger" type="checkbox" class="unshown">
-          <label for="burger" id="nav-open">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        <label id="nav-back" for="burger" class="unshown"></label>
+    <ul class="nav">
 
-        <ul class="nav">
+      <div class="message">
+        <p>Thank you for visiting! </p>
+        <p>I'm a front-end web developer, based in Toronto Canada.</p>
+        <p>My website is launching soon. In the meantime, feel free to have a look at my work <span><a
+              href="portfolio.html" class="underline">here</a></span> or drop me a line at:
+        </p>
+        <p> hello@yukanishijima.com</p>
+      </div>
 
-          <div class="message">
-            <p>Thank you for visiting! </p>
-            <p>I'm a front-end web developer, based in Toronto Canada.</p>
-            <p>My website is launching soon. In the meantime, feel free to have a look at my work (
-              <span><a href="https://hidamariphotography.com" class="underline" target="_blank">Hidamari Photography</a></span>,
-              <span><a href="https://norman-lee.com" class="underline_blue" target="_blank">LEE LAB</a></span>) or drop me a line at: 
-            </p>            
-            <p> hello@yukanishijima.com</p>
-          </div>
+      <li><a href="">About</a></li>
+      <li><a href="">Skills</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Contact</a></li>
 
-          <li><a href="">About</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="" >Portfolio</a></li>
-          <li><a href="">Contact</a></li>
+    </ul>
+    <!--end of .nav-->
 
-        </ul><!--end of .nav-->
-
-    </header>
+  </header>
 
   <main>
 
-    <div class="container">
-    <picture>
-      <source media="(max-width: 480px)"
-       srcset="/images/wall_480px_C.jpg 1x,
-                  /images/wall_1000px_C.jpg 2x,
-                  /images/wall_1600px_C.jpg 3x">
-      <source media="(max-width: 750px)"
-       srcset="/images/wall_1000px_C.jpg 1x,
-                  /images/wall_1600px_C.jpg 2x">
-      <source srcset="/images/wall_1600px_C.jpg">
+    <div class="first-page-container">
+      <picture>
+        <source media="(max-width: 480px)" srcset="https://yukanishijima.github.io/images/wall_480px_C.jpg 1x,
+        https://yukanishijima.github.io/images/wall_1000px_C.jpg 2x,
+                  https://yukanishijima.github.io/images/wall_1600px_C.jpg 3x">
+        <source media="(max-width: 750px)" srcset="https://yukanishijima.github.io/images/wall_1000px_C.jpg 1x,
+        https://yukanishijima.github.io/images/wall_1600px_C.jpg 2x">
+        <source srcset="https://yukanishijima.github.io/images/wall_1200px_C.jpg">
+        <img src="https://yukanishijima.github.io/images/wall_1200px_C.jpg" alt="wall" class="image">
+      </picture>
 
-      <img src="/images/wall_1200px_C.jpg"
-            alt="wall" border="0" class="image">
-    </picture>
-
-    <div class="title">
-      <h1>Yuka <br>Nishijima</h1>
-      <p><span id="fragment1">Front-End Developer</span>
-            <span id="fragment2">Digital Creative</span>
-            <span id="fragment3">Aspiring Minimalist</span>
-      </p>
-    </div><!-- end of title -->
-
-
-  </div><!-- end of container -->
-
+      <div class="title">
+        <h1>Yuka <br>Nishijima</h1>
+        <p><span id="fragment1">Front-End Developer</span>
+          <span id="fragment2">Digital Creative</span>
+          <span id="fragment3">Aspiring Minimalist</span>
+        </p>
+      </div><!-- end of title -->
+    </div><!-- end of .first-page-container -->
 
   </main>
-  </body>
+  <script src="https://yukanishijima.github.io/yukanishijima.github.io/script.js"></script>
+</body>
+
 </html>
