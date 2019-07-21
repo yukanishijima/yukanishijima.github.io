@@ -1,15 +1,3 @@
-/* ＜フォント＞*/
-font-family: 'Carrois Gothic SC', sans-serif;
-font-family: 'Tenor Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
-
-/* ＜色＞*/
-rgba(0,0,0, 0.9); /* black */
-rgba(255, 255, 255, 0.5); /* white*/
-rgba(255,250,250); /* snow */
-rgba(245,245,245); /* whitesmoke */
-
-
 /* global styles
 ---------------------------------------------*/
 * {-webkit-box-sizing: border-box;
@@ -22,6 +10,10 @@ body {
   font-family: Geogia, serif;
   text-align: center;
   margin: 0px;
+
+  /* for the view-btn & github-btn */
+  position: relative;
+  z-index: -1;
 }
 p {
   margin: 0px;
@@ -99,7 +91,7 @@ label:hover {
   height: 100vh;
   width: 320px;
   max-width: 90vw;
-  background-color: rgba(255,250,250,0.8); /* snow */
+  background-color: rgba(255, 255, 255, 0.9);
   top: 0px;
   right: 0px;
   transform: translateX(105%);
@@ -137,7 +129,7 @@ label:hover {
 
 /* main
 --------------------------------------------- */
-.container {
+.first-page-container {
   position: relative;
   z-index: -1;
 }
@@ -150,7 +142,7 @@ label:hover {
 h1 {
   text-transform: uppercase;
   font-size: 60px;
-  font-family: 'Carrois Gothic SC', sans-serif;
+  font-family: 'Carrois Gothic', sans-serif;
   color: rgba(0,0,0, 0.9); /* black */
   letter-spacing: 0.05em;
   margin: 0;
@@ -266,19 +258,6 @@ h1 {
   100%{width:0; opacity:1; border-right: none; }
 }
 
-/* more than 840px wide screen
-------------------------------------------------------- */
-
-@media screen and (min-width: 840px) {
-  #burger:checked ~ #nav-back {
-    display: none;
-  }
-  /* to make the background completely transparent */
-  .nav {
-    background-color: rgba(255,250,250,0);
-  }
-}
-
 
 /* before launching a site
 -------------------------------------------------------*/
@@ -288,9 +267,10 @@ header > .nav > li {
 .message {
   position: fixed;
   top: 90px;
-  margin: 35px;
+  padding: 35px 25px;
   text-align: left;
   opacity: 0;
+  max-width: 90vw;
 }
 #burger:checked ~ .nav > .message {
   opacity: 1;
@@ -303,23 +283,107 @@ header > .nav > li {
   margin-bottom: 25px;
 }
 .underline {
-  font-size: 16px;
-  background: linear-gradient(transparent 60%, #ebbbf1 60%);
-  text-decoration: none;
-  color: rgba(0,0,0, 0.7); /* black */
-}
-.underline_blue {
-  font-size: 16px;
   background: linear-gradient(transparent 60%, #abc9f5 60%);
   text-decoration: none;
   color: rgba(0,0,0, 0.7); /* black */
 }
-@media screen and (min-width: 840px) {
-  #burger:checked ~ #nav-back {
-    display: block;
-  }
-  /* to make the background completely transparent */
-  .nav {
-    background-color: rgba(255,250,250,0.8);
-  }
+
+/* work
+---------------------------------------------- */
+.wrap {
+  background-image: url("images/wall_1200px_C.jpg");
+  position: relative;
+  z-index: -2
 }
+.wrap:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+section {
+  padding: 40px;
+}
+.bg-1 {
+  background: rgba(236, 228, 234, 0.9);
+  max-width: 90vw;
+  margin: 15px auto;
+}
+.bg-2 {
+  background: rgba(228, 241, 255, 0.9);
+  max-width: 90vw;
+  margin: 15px auto;
+}
+.bg-3 {
+  background: rgba(253, 246, 241, 0.9);
+  max-width: 90vw;
+  margin: 15px auto;
+}
+.bg-4 {
+  background: rgba(230, 247, 231, 0.9);
+  max-width: 90vw;
+  margin: 15px auto;
+}
+.text-container {
+  padding: 30px 0;
+}
+.img-container {
+  padding: 0 0 30px;
+}
+h2 {
+  font-family: 'Carrois Gothic', sans-serif;
+  margin-bottom: 20px;
+}
+.text-container p {
+  font-size: 15px;
+  font-family: 'Montserrat', san-serif;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.tools li {
+  display: inline-block;
+  font-family: 'Montserrat', san-serif;
+  font-weight: 100;
+  font-size: 12px;
+  border: 1px solid black;
+  margin: 2px 0;
+  padding: 3px 5px;
+}
+.tools {
+  margin-bottom: 20px;
+}
+.github-btn {
+  display: inline-block;
+  width: 40px;
+  background: rgba(28, 42, 64, 0.7);
+  color: white;
+  padding: 3px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.view-btn {
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Montserrat', san-serif;
+  font-weight: 100;
+  font-size: 15px;
+  width: 90px;
+  background: rgba(25, 111, 236, 0.7);
+  color: white;
+  padding: 6px;
+  border-radius: 5px;
+
+  position: relative;
+  z-index: 10;
+}
+
+.site-img {
+  width: 250px;
+  height: 150px;
+}
+
