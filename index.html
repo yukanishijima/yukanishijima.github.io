@@ -16,12 +16,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yuka Nishijima | Web Developer</title>
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Montserrat:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Muli:200,300,400,500,600,700" rel="stylesheet">
+  <!-- CSS  -->
+  <link rel="stylesheet" href="styles.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <!-- CSS  -->
-  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -32,20 +32,25 @@
     <label for="burger" id="nav-open">
       <span></span>
       <span></span>
-      <span></span>
-      <span></span>
     </label>
     <label id="nav-back" for="burger" class="unshown"></label>
 
     <ul class="nav">
 
       <div class="message">
-        <p>Thank you for visiting! </p>
+        <p>Thanks for visiting! </p>
         <p>I'm a full stack web developer, based in Toronto Canada.</p>
         <p>My website is launching soon. In the meantime, feel free to have a look at my work <span><a
               href="portfolio.html" class="underline">here</a></span> or drop me a line at:
         </p>
         <p> hello@yukanishijima.com</p>
+
+        <div class="social">
+          <a href="https://www.linkedin.com/in/yukanshijima/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/yukanishijima" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:hello@yukanishijima.com" target="_blank"><i class="far fa-envelope"></i></a>
+        </div>
+
       </div>
 
       <li><a href="">About</a></li>
@@ -61,16 +66,6 @@
   <main>
 
     <div class="first-page-container">
-      <picture>
-        <source media="(max-width: 480px)" srcset="https://yukanishijima.github.io/images/wall_480px_C.jpg 1x,
-        https://yukanishijima.github.io/images/wall_1000px_C.jpg 2x,
-                  https://yukanishijima.github.io/images/wall_1600px_C.jpg 3x">
-        <source media="(max-width: 750px)" srcset="https://yukanishijima.github.io/images/wall_1000px_C.jpg 1x,
-        https://yukanishijima.github.io/images/wall_1600px_C.jpg 2x">
-        <source srcset="https://yukanishijima.github.io/images/wall_1200px_C.jpg">
-        <img src="https://yukanishijima.github.io/images/wall_1200px_C.jpg" alt="wall" class="image">
-      </picture>
-
       <div class="title">
         <h1>Yuka <br>Nishijima</h1>
         <p><span id="fragment1">Full Stack Developer</span>
