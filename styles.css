@@ -418,3 +418,18 @@ p {
     height: 330px;
   }
 }
+
+/* animation - showCard
+---------------------------------- */
+.showCard {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+
+.isShow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}

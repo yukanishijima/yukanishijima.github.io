@@ -14,7 +14,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuka Nishijima | Front-End Developer</title>
+  <title>Yuka Nishijima | Web Developer</title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Montserrat:300,400|Muli:200,300,400,500,600,700"
     rel="stylesheet">
@@ -35,6 +35,7 @@
     crossorigin="anonymous"></script>
   <!-- CSS  -->
   <link rel="stylesheet" href="styles.css">
+
 </head>
 <main class="wrap">
   <a href="index.html" class="back">&larr;</a>
@@ -43,7 +44,7 @@
     <div class="row justify-content-around">
 
       <div class="col-12 col-md-6 px-2">
-        <div class="my-card">
+        <div class="my-card showCard">
           <a href="https://for-book-lovers.herokuapp.com" target="_blank">
             <img src="images/bookMe.png" alt="website" class="site-img">
           </a>
@@ -61,7 +62,7 @@
       </div>
 
       <div class="col-12 col-md-6 px-2">
-        <div class="my-card">
+        <div class="my-card showCard">
           <a href="https://teibi.ca" target="_blank">
             <img src="images/teibi.png" alt="website" class="site-img">
           </a>
@@ -79,7 +80,7 @@
       </div>
 
       <div class="col-12 col-md-6 px-2">
-        <div class="my-card">
+        <div class="my-card showCard">
           <a href="https://intense-island-52740.herokuapp.com" target="_blank">
             <img src="images/eatDaBurger.png" alt="website" class="site-img">
           </a>
@@ -95,7 +96,7 @@
       </div>
 
       <!-- <div class="col-12 col-md-6 px-2">
-          <div class="my-card">
+          <div class="my-card showCard">
             <a href="https://github.com/yukanishijima/rps-multiplayer" target="_blank">
               <img src="images/rock-paper-scissors.png" alt="website" class="site-img">
             </a>
@@ -108,7 +109,7 @@
         </div> -->
 
       <div class="col-12 col-md-6 px-2">
-        <div class="my-card">
+        <div class="my-card showCard">
           <a href="https://pacific-cove-73996.herokuapp.com/" target="_blank">
             <img src="images/friendFinder.png" alt="website" class="site-img">
           </a>
@@ -124,7 +125,7 @@
       </div>
 
       <div class="col-12 col-md-6 px-2">
-        <div class="my-card">
+        <div class="my-card showCard">
           <a href="https://yukanishijima.github.io/giphy-API/" target="_blank">
             <img src="images/giphyThing.png" alt="website" class="site-img">
           </a>
@@ -140,7 +141,7 @@
       </div>
 
       <!-- <div class="col-12 col-md-6 px-2">
-        <div class="my-card">
+        <div class="my-card showCard">
           <a href="https://yukanishijima.github.io/clicky-game/" target="_blank">
             <img src="images/clickyGame.png" alt="website" class="site-img">
           </a>
@@ -154,7 +155,7 @@
       </div> -->
 
       <!-- <div class="col-12 col-md-6 px-2">
-          <div class="my-card">
+          <div class="my-card showCard">
             <a href="https://github.com/yukanishijima/crystal-collector" target="_blank">
               <img src="images/crystalCollector.png" alt="website" class="site-img">
             </a>
@@ -167,7 +168,7 @@
         </div> -->
 
       <div class="col-12 col-md-6 px-2">
-        <div class="my-card">
+        <div class="my-card showCard">
           <a href="https://norman-lee.com" target="_blank">
             <img src="images/lee-lab.png" alt="website" class="site-img">
           </a>
@@ -185,7 +186,7 @@
       </div>
 
       <div class="col-12 col-md-6 px-2">
-        <div class="my-card">
+        <div class="my-card showCard">
           <a href="http://polar-hollows-00844.herokuapp.com/" target="_blank">
             <img src="images/batmen.png" alt="website" class="site-img">
           </a>
@@ -202,7 +203,7 @@
       </div>
 
       <div class="col-12 col-md-6 px-2">
-        <div class="my-card">
+        <div class="my-card showCard">
           <a href="https://hidamariphotography.com" target="_blank">
             <img src="images/hidamari.png" alt="website" class="site-img">
           </a>
@@ -218,7 +219,7 @@
       </div>
 
       <div class="col-12 col-md-6 px-2">
-        <div class="my-card">
+        <div class="my-card showCard">
           <a href="https://yukanishijima.github.io/trivia-game/" target="_blank">
             <img src="images/coffeeTrivia.png" alt="website" class="site-img">
           </a>
@@ -239,7 +240,17 @@
 
 
 </main>
-<script src="https://yukanishijima.github.io/yukanishijima.github.io/script.js"></script>
+<script src="script.js"></script>
+<!-- in case JavaScript is turned off -->
+<noscript>
+  <style>
+    .showCard {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
+    }
+  </style>
+</noscript>
 
 </body>
 
