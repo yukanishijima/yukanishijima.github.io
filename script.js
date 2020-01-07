@@ -13,7 +13,7 @@ const cards = [
     link: "https://teibi.ca",
     image: "teibi.png",
     stack: "React.js | MongoDB | Node.js | Express | Socket.IO | Passport.js | Leaflet.js | JavaScript | API | Material.UI | CSS | HTML | Wireframing | UI | UX",
-    description: "Developed an app which gives a list of ideal meetup locations in the halfway point between 2 users. Used Socket.IO to update user activities and implemented a chat feature. MongoDB and Passport.js enable the app to give users options to sign in. Team project.",
+    description: "Developed an app which gives a list of ideal meetup locations in the halfway point between 2 users. Used Socket.IO to update user activities and implement a chat feature. MongoDB and Passport.js enable the app to give users options to sign in. Team project.",
   },
   // {
   //   title: "Eat Da Burger",
@@ -101,19 +101,26 @@ function generteCard() {
       aTag = "";
     }
 
-    return `<div class="col-12 col-md-6 px-2">
-            <div class="my-card showCard">
-              <a href="${el.link}" target="_blank">
-                <img src="images/${el.image}" alt="website" class="site-img">
-              </a>
-              <div class="my-card-title">
-                <h2>${el.title}</h2>
-                ${aTag}
+    return `<div class="col-12 px-2">
+              <div class="my-card showCard row align-items-end">
+
+                <div class="col-12 col-lg-6">
+                  <a href="${el.link}" target="_blank">
+                    <img src="images/${el.image}" alt="website" class="site-img">
+                  </a>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                  <div class="my-card-title">
+                    <h2>${el.title}</h2>
+                    ${aTag}
+                  </div>
+                  <p>${el.stack}</p>
+                  <p>${el.description}</p>
+                </div>
+
               </div>
-              <p>${el.stack}</p>
-              <p>${el.description}</p>
             </div>
-          </div>
     `}).join("");
 };
 
