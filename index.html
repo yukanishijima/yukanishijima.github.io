@@ -16,68 +16,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yuka Nishijima | Web Developer</title>
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Muli:200,300,400,500,600,700" rel="stylesheet">
-  <!-- CSS  -->
-  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Carrois+Gothic|Montserrat:300,400|Muli:200,300,400,500,600,700|Poiret+One"
+    rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- CSS  -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 
 <body>
 
   <header>
-
-    <input id="burger" type="checkbox" class="unshown">
-    <label for="burger" id="nav-open">
-      <span></span>
-      <span></span>
-    </label>
-
-    <label id="nav-back" for="burger" class="unshown"></label>
-
-    <ul class="nav">
-
-      <div class="message">
-        <p>Thanks for visiting! </p>
-        <p>I'm a full stack web developer, based in Toronto Canada.</p>
-        <p>My website is launching soon. In the meantime, feel free to have a look at my work <span><a
-              href="portfolio.html" class="underline">here</a></span> or drop me a line at:
-        </p>
-        <p> hello@yukanishijima.com</p>
-
-        <div class="social">
-          <a href="https://www.linkedin.com/in/yukanshijima/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/yukanishijima" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="mailto:hello@yukanishijima.com" target="_blank"><i class="far fa-envelope"></i></a>
-        </div>
-
-      </div>
-
-      <li><a href="">About</a></li>
-      <li><a href="">Skills</a></li>
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">Contact</a></li>
-
+    <h1 class="initials">YN</h1>
+    <ul class="contact">
+      <li><a href="mailto: hello@yukanishijima.com">Email</a></li>
+      <li><a href="https://github.com/yukanishijima">Gh</a></li>
+      <li><a href="https://www.linkedin.com/in/yukanshijima/">Li</a></li>
     </ul>
-    <!--end of .nav-->
-
   </header>
 
   <main>
 
-    <div class="first-page-container">
+    <section class="first-page-container">
       <div class="title">
-        <h1>Yuka <br>Nishijima</h1>
-        <p><span id="fragment1">Full Stack Developer</span>
-          <span id="fragment2">Digital Creative</span>
-          <span id="fragment3">Aspiring Minimalist</span>
-        </p>
-      </div><!-- end of title -->
-    </div><!-- end of .first-page-container -->
+        <p>Hello, I’m Yuka Nishijima. </p>
+        <p>I’m a full stack web developer based in Toronto, specializing in Javascript and MEAN stack.</p>
+        <p>I create digital products to deliver meaningful user experience.</p>
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="line"></div>
+      <div class="row justify-content-around card-container"></div>
+    </section>
 
   </main>
+
+  <footer>
+    <div class="full-name">
+      <p>Yuka Nishijima</p>
+      <p>Full Stack Web Developer</p>
+    </div>
+    <div class="connect">
+      <p>Contact</p>
+      <p>hello@yukanishijima.com</p>
+    </div>
+  </footer>
+
+
   <script src="script.js"></script>
+
+  <!-- in case JavaScript is turned off -->
+  <noscript>
+    <style>
+      .showCard {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+      }
+    </style>
+  </noscript>
+
+
 </body>
 
 </html>

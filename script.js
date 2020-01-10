@@ -4,7 +4,7 @@ const cards = [
     github: "https://github.com/yukanishijima/react-book-search",
     link: "https://for-book-lovers.herokuapp.com",
     image: "bookMe.png",
-    stack: "React.js | MongoDB | Node.js | Express | Socket.IO | JavaScript | API | Material.UI | CSS | HTML | Heroku | UI",
+    stack: "React.js / MongoDB  /  Node.js / Express / Socket.IO / JavaScript / API / Material.UI / CSS / HTML / Heroku / UI",
     description: "Developed a book search web application with Google Books API which uses React lifecycle method to display a search result and allows users to save a book to MongoDB using Mongoose.",
   },
   {
@@ -12,7 +12,7 @@ const cards = [
     github: "",
     link: "https://teibi.ca",
     image: "teibi.png",
-    stack: "React.js | MongoDB | Node.js | Express | Socket.IO | Passport.js | Leaflet.js | JavaScript | API | Material.UI | CSS | HTML | Wireframing | UI | UX",
+    stack: "React.js / MongoDB / Node.js / Express / Socket.IO / Passport.js / Leaflet.js / JavaScript / API / Material.UI / CSS / HTML / Wireframing / UI / UX",
     description: "Developed an app which gives a list of ideal meetup locations in the halfway point between 2 users. Used Socket.IO to update user activities and implement a chat feature. MongoDB and Passport.js enable the app to give users options to sign in. Team project.",
   },
   // {
@@ -28,7 +28,7 @@ const cards = [
     github: "",
     link: "https://norman-lee.com",
     image: "lee-lab.png",
-    stack: "jQuery | PHP | CSS | HTML | Wireframing | UI | UX",
+    stack: "jQuery / PHP / CSS / HTML / Wireframing / UI / UX",
     description: "Designed, developed and launched a fully-responsive site from the ground-up for a Neural Systems and Behavior Research Lab at St. Olaf College in Minnesota, which contains research subjects, team members, publications, and lab news. Deployed as WordPress original theme using PHP.",
   },
   {
@@ -36,15 +36,15 @@ const cards = [
     github: "https://github.com/yukanishijima/giphy-API",
     link: "https://yukanishijima.github.io/giphy-API/",
     image: "giphyThing.png",
-    stack: "JavaScript | jQuery | API | CSS | HTML",
-    description: "Developed a Gif search app using Giphy APL to search gifs of Hallywood stars. The app lets users to create their own gif generating buttons.",
+    stack: "JavaScript / jQuery / API / CSS / HTML",
+    description: "This is a lighthearted Gif search app using Giphy APL to display gifs of Hallywood stars. The app lets users to create their own gif generating buttons.",
   },
   {
     title: "Batmen",
     github: "https://github.com/yukanishijima/Project_2/tree/template",
     link: "http://polar-hollows-00844.herokuapp.com/",
     image: "batmen.png",
-    stack: "JavaScript | Node.js | Express | MySQL | API | Leaflet.js | SASS | CSS | HTML | Heroku",
+    stack: "JavaScript / Node.js / Express / MySQL / API / Leaflet.js / SASS / CSS / HTML / Heroku",
     description: "Developed a search engine for personal setting establishments that have been inspected by Toronto Public Health (BodySafe). Users can serach for an establishment and find their inspection history on a map. Team project.",
   },
   {
@@ -52,23 +52,23 @@ const cards = [
     github: "",
     link: "https://hidamariphotography.com",
     image: "hidamari.png",
-    stack: "PHP | CSS | HTML | Wireframing | UI | UX",
+    stack: "PHP / CSS / HTML / Wireframing / UI / UX",
     description: "Designed, developed and launched a portfolio site for a local photographer. Built all animations purely with CSS3 from scratch. Deployed as WordPress original theme using PHP.",
   },
-  {
-    title: "Friend Finder",
-    github: "https://github.com/yukanishijima/friend-finder",
-    link: "https://pacific-cove-73996.herokuapp.com/",
-    image: "friendFinder.png",
-    stack: "JavaScript | jQuery | Node.js | Express | API | Bootstrap | CSS | HTML | Heroku",
-    description: "Developed a simple compatibility-based friend pairing app. Created a server-side APIs to handle GET and POST requests.",
-  },
+  // {
+  //   title: "Friend Finder",
+  //   github: "https://github.com/yukanishijima/friend-finder",
+  //   link: "https://pacific-cove-73996.herokuapp.com/",
+  //   image: "friendFinder.png",
+  //   stack: "JavaScript / jQuery / Node.js / Express / API / Bootstrap / CSS / HTML / Heroku",
+  //   description: "Developed a simple compatibility-based friend pairing app. Created a server-side APIs to handle GET and POST requests.",
+  // },
   // {
   //   title: "Halloween Clicky",
   //   github: "https://github.com/yukanishijima/clicky-game/",
   //   link: "https://yukanishijima.github.io/clicky-game",
   //   image: "clickyGame.png",
-  //   stack: "React.js | JavaScript | Node.js | Express | API | Bootstrap | CSS | HTML",
+  //   stack: "React.js / JavaScript / Node.js / Express / API / Bootstrap / CSS / HTML",
   //   description: "Developed a Halloween themed memory game using Creat React App. ",
   // },
   // {
@@ -76,17 +76,17 @@ const cards = [
   //   github: "https://github.com/yukanishijima/crystal-collector",
   //   link: "https://yukanishijima.github.io/crystal-collector/",
   //   image: "crystalCollector.png",
-  //   stack: "JavaScript | jQuery | CSS | HTML",
+  //   stack: "JavaScript / jQuery / CSS  HTML",
   //   description: "",
   // },
-  {
-    title: "Coffee Trivia",
-    github: "https://github.com/yukanishijima/trivia-game/",
-    link: "https://yukanishijima.github.io/trivia-game",
-    image: "coffeeTrivia.png",
-    stack: "JavaScript | jQuery | CSS | HTML",
-    description: "This is a lighthearted trivia game for all coffee lovers :) Fully-responsive across all devices.",
-  },
+  // {
+  //   title: "Coffee Trivia",
+  //   github: "https://github.com/yukanishijima/trivia-game/",
+  //   link: "https://yukanishijima.github.io/trivia-game",
+  //   image: "coffeeTrivia.png",
+  //   stack: "JavaScript / jQuery / CSS / HTML",
+  //   description: "This is a lighthearted trivia game for all coffee lovers :) Fully-responsive across all devices.",
+  // },
 ];
 
 // generate cards
@@ -115,8 +115,8 @@ function generteCard() {
                     <h2>${el.title}</h2>
                     ${aTag}
                   </div>
-                  <p>${el.stack}</p>
-                  <p>${el.description}</p>
+                  <p class="card-p">${el.stack}</p>
+                  <p class="card-p">${el.description}</p>
                 </div>
 
               </div>
