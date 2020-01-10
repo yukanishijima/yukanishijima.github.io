@@ -104,13 +104,13 @@ function generteCard() {
     return `<div class="col-12 px-2">
               <div class="my-card showCard row align-items-end">
 
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-md-6">
                   <a href="${el.link}" target="_blank">
                     <img src="images/${el.image}" alt="website" class="site-img">
                   </a>
                 </div>
 
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-md-6">
                   <div class="my-card-title">
                     <h2>${el.title}</h2>
                     ${aTag}

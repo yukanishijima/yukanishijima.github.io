@@ -69,8 +69,10 @@ p {
 
 /* work
 ---------------------------------------------- */
-.container {
+.my-container {
   position: relative;
+  max-width: 90vw;
+  padding: 0;
 }
 .line{
   position: absolute;
@@ -79,13 +81,16 @@ p {
   background: black;
   width: 1px;
   height: 100px;
-  margin-top: -150px;
+  margin-top: -100px;
+}
+.card-container {
+  margin: 50px auto 100px;
 }
 .my-card {
   background: transparent;
   border: none;
   max-width: 90vw;
-  margin: 90px auto;
+  margin: 50px auto 0;
 }
 h2 {
   font-family: 'Muli', sans-serif;
@@ -100,8 +105,10 @@ h2 {
   /* font-family: 'Montserrat', san-serif; */
   font-weight: 100;
   text-align: left;
-  margin-bottom: 20px;
   line-height: 1.5em;
+}
+.card-p:nth-child(2) {
+  margin-bottom: 20px;
 }
 .my-card-title {
   text-align: left;
@@ -116,7 +123,7 @@ h2 {
 }
 .site-img {
   width: 100%;
-  height: 160px;
+  height: 50vw;
   -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -146,22 +153,17 @@ footer {
 
 /* media query
 ---------------------------------------------- */
-@media screen and (min-width: 410px) {
-  .site-img {
-    height: 260px;
-  }
-}
-
-
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 540px) {
   .initials {
     top: 3vw;
     left: 3vw;
   }
   .contact {
     position: fixed;
-    top: 67vh;    
+    top: initial;
+    bottom: 2vw;    
     right: 2vw;
+    height: 200px;
   }
   .contact li {
     margin-top: 2.5em;
@@ -169,54 +171,48 @@ footer {
     transform: rotate(-90deg);
     display: block;
   }
-
-
   .title > p {
     font-size: 30px;
     width: 80vw;
   }
 
   .my-card {
-    max-width: 80vw;
-  }
-  .site-img {
-    height: 300px;
+    margin: 80px auto 0;
   }
 }
 @media screen and (min-width: 766px) {
+  .my-container {
+    max-width: 85vw;
+  }
+  .card-container {
+    margin: 50px auto 140px;
+  }
   .site-img {
-    height: 290px;
+    height: 250px;
   }
   .my-card {
-    max-width: 550px;
+    margin: 90px auto 0;
   }
 }
 @media screen and (min-width: 992px) {
   .title > p {
     font-size: 30px;
   }
-
+  .card-container {
+    margin: 50px auto 180px;
+  }
   .site-img {
-    height: 290px;
+    height: 330px;
   }
   .my-card {
-    margin: 70px auto;
-    max-width: 90vw;
+    margin: 130px auto 0;
   }
   h2 {
     font-weight: 400;
   }
-  p {
-    font-size: 0.8em;
-  }
-  .wrap {
-    padding: 80px 0;
-  }
 }
 @media screen and (min-width: 1200px) {
-  .site-img {
-    height: 330px;
-  }
+  
 }
 
 /* animation - showCard
