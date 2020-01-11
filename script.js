@@ -153,6 +153,16 @@ function showCard() {
   }
 }
 
+// custom cursor
+const cursor = document.querySelector(".cursor");
+const stalker = document.querySelector(".stalker");
+
+document.addEventListener("mousemove", function (e) {
+  cursor.setAttribute("style", `left: ${e.pageX - 13}px; top: ${e.pageY - 13}px;`);
+  stalker.setAttribute("style", `left: ${e.pageX - 13}px; top: ${e.pageY - 13}px;`);
+});
+
+
 generteCard();
 showCard();
 window.addEventListener('scroll', showCard);
