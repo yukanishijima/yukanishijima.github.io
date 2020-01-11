@@ -158,7 +158,7 @@ const cursor = document.querySelector(".cursor");
 const stalker = document.querySelector(".stalker");
 
 document.addEventListener("mousemove", function (e) {
-  cursor.setAttribute("style", `left: ${e.pageX - 13}px; top: ${e.pageY - 13}px;`);
+  cursor.setAttribute("style", `left: ${e.pageX - 4.5}px; top: ${e.pageY - 4.5}px;`);
   stalker.setAttribute("style", `left: ${e.pageX - 13}px; top: ${e.pageY - 13}px;`);
 });
 
