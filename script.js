@@ -96,7 +96,7 @@ function generteCard() {
 
   cardContainer.innerHTML = cards.map(el => {
     if (el.github !== "") {
-      aTag = `<a href="${el.github}" target="_blank"><i class="fab fa-github-square"></i></a>`;
+      aTag = `<a href="${el.github}" target="_blank" class="github hover">Gh</a>`;
     } else {
       aTag = "";
     }
@@ -106,7 +106,7 @@ function generteCard() {
 
                 <div class="col-12 col-md-6">
                   <a href="${el.link}" target="_blank">
-                    <img src="images/${el.image}" alt="website" class="site-img">
+                    <img src="images/${el.image}" alt="website" class="site-img hover">
                   </a>
                 </div>
 
@@ -122,6 +122,18 @@ function generteCard() {
               </div>
             </div>
     `}).join("");
+
+
+  // add cursor hover effect
+  const hover = document.querySelectorAll(".hover");
+
+  hover.forEach(el => el.addEventListener("mouseenter", function (e) {
+    stalker.classList.add("bigger");
+  }));
+
+  hover.forEach(el => el.addEventListener("mouseout", function (e) {
+    stalker.classList.remove("bigger");
+  }));
 };
 
 
@@ -161,6 +173,7 @@ document.addEventListener("mousemove", function (e) {
   cursor.setAttribute("style", `left: ${e.pageX - 4.5}px; top: ${e.pageY - 4.5}px;`);
   stalker.setAttribute("style", `left: ${e.pageX - 13}px; top: ${e.pageY - 13}px;`);
 });
+
 
 
 generteCard();
