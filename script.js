@@ -130,7 +130,6 @@ function generteCard() {
   hover.forEach(el => el.addEventListener("mouseenter", function (e) {
     stalker.classList.add("bigger");
   }));
-
   hover.forEach(el => el.addEventListener("mouseout", function (e) {
     stalker.classList.remove("bigger");
   }));
