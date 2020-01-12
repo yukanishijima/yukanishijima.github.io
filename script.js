@@ -123,16 +123,7 @@ function generteCard() {
             </div>
     `}).join("");
 
-
-  // add cursor hover effect
-  const hover = document.querySelectorAll(".hover");
-
-  hover.forEach(el => el.addEventListener("mouseenter", function (e) {
-    stalker.classList.add("bigger");
-  }));
-  hover.forEach(el => el.addEventListener("mouseout", function (e) {
-    stalker.classList.remove("bigger");
-  }));
+  cursorHover();
 };
 
 
@@ -171,7 +162,21 @@ const stalker = document.querySelector(".stalker");
 document.addEventListener("mousemove", function (e) {
   cursor.setAttribute("style", `left: ${e.pageX - 4.5}px; top: ${e.pageY - 4.5}px;`);
   stalker.setAttribute("style", `left: ${e.pageX - 13}px; top: ${e.pageY - 13}px;`);
+
+  cursorHover();
 });
+
+// add cursor hover effect
+function cursorHover() {
+  const hover = document.querySelectorAll(".hover");
+
+  hover.forEach(el => el.addEventListener("mouseenter", function (e) {
+    stalker.classList.add("bigger");
+  }));
+  hover.forEach(el => el.addEventListener("mouseout", function (e) {
+    stalker.classList.remove("bigger");
+  }));
+};
 
 
 

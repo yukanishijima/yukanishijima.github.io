@@ -25,6 +25,10 @@ p {
   font-family: 'Poiret One', cursive;
   z-index: 1;
 }
+.initials a {
+  text-decoration: none;
+  color: black;
+}
 .contact {
   position: fixed;
   top: 4vh;
