@@ -25,7 +25,6 @@ p {
   position: absolute;
   top: -40px;
 }
-
 .stalker {
   height: 25px;
   width: 25px;
@@ -40,11 +39,11 @@ p {
   z-index: -1;
 }
 .bigger {
-  height: 55px;
-  width: 55px;
-  transform: translate(-15px, -15px);
+  height: 60px;
+  width: 60px;
+  transform: translate(-18px, -18px);
+  background: rgba(255, 210, 228, 0.7);
 }
-
 @media screen and (max-width: 415px) {
   .cursor, .stalker {
     display: none;
@@ -64,6 +63,7 @@ p {
 .initials a {
   text-decoration: none;
   color: black;
+  cursor: none;
 }
 .contact {
   position: fixed;
@@ -81,6 +81,7 @@ p {
   border-bottom: 1px solid black;
   color: black;
   font-weight: 200;
+  cursor: none;
 }
 .initials a:hover, .contact li a:hover {
   cursor: none;
@@ -112,10 +113,12 @@ p {
   border-bottom: 1px solid black;
   text-decoration: none;
   color: black;
+  cursor: none;
 }
 .underline:hover {
   text-decoration: none;
   color: black;
+  cursor: none;
 }
 
 /* work
@@ -168,6 +171,8 @@ h2 {
   margin-left: 10px;
   border: 1px solid #212529;
   padding: 2px 3px;
+  cursor: none;
+
 }
 .github:hover {
   color: #212529;
@@ -180,9 +185,10 @@ h2 {
   -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  cursor: none;
 }
 .site-img:hover {
-  opacity: 0.7;
+  opacity: 0.6;
   cursor: none;
 }
 
