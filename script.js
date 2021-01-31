@@ -10,7 +10,7 @@ const cards = [
   {
     title: "Teibi",
     github: "",
-    link: "https://teibi.ca",
+    link: "https://teibi.tk/",
     image: "teibi.png",
     stack: "React.js / MongoDB / Node.js / Express / Socket.IO / Passport.js / Leaflet.js / JavaScript / API / Material.UI / CSS / HTML / Wireframing / UI / UX",
     description: "Developed an app which gives a list of ideal meetup locations in the halfway point between 2 users. Used Socket.IO to update user activities and implement a chat feature. MongoDB and Passport.js enable the app to give users options to sign in. Team project.",
@@ -37,7 +37,7 @@ const cards = [
     link: "https://yukanishijima.github.io/giphy-API/",
     image: "giphyThing.png",
     stack: "JavaScript / jQuery / API / CSS / HTML",
-    description: "This is a lighthearted Gif search app using Giphy APL to display gifs of Hallywood stars. The app lets users to create their own gif generating buttons.",
+    description: "This is a lighthearted Gif search app using Giphy API to display gifs of Hallywood stars. The app lets users to create their own gif generating buttons.",
   },
   {
     title: "Batmen",
