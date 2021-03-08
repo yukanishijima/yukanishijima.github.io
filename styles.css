@@ -1,16 +1,19 @@
 /* global styles
 ---------------------------------------------*/
-* {-webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   font-family: 'Muli', sans-serif;
   margin: 0px;
   cursor: none;
 }
+
 p {
   margin: 0px;
 }
@@ -24,7 +27,9 @@ p {
   background-color: rgb(56, 56, 56);
   position: absolute;
   top: -40px;
+  z-index: 0;
 }
+
 .stalker {
   height: 25px;
   width: 25px;
@@ -33,19 +38,27 @@ p {
   position: absolute;
   top: -40px;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  z-index: -1;
+  transition-timing-function: ease-out;
+  z-index: 0;
 }
+
+.z-index {
+  z-index: 0;
+}
+
 .bigger {
   height: 60px;
   width: 60px;
   transform: translate(-18px, -18px);
   background: rgba(255, 216, 231, 0.8);
 }
+
 @media screen and (max-width: 415px) {
-  .cursor, .stalker {
+
+  .cursor,
+  .stalker {
     display: none;
   }
 }
@@ -60,22 +73,26 @@ p {
   font-family: 'Poiret One', cursive;
   z-index: 1;
 }
+
 .initials a {
   text-decoration: none;
   color: black;
   cursor: none;
 }
+
 .contact {
   position: fixed;
   top: 4vh;
   right: 4vh;
-  z-index: 1;
+  z-index: 0;
 }
+
 .contact li {
   list-style: none;
   display: inline;
   margin-left: 10px;
 }
+
 .contact li a {
   text-decoration: none;
   border-bottom: 1px solid black;
@@ -83,7 +100,9 @@ p {
   font-weight: 200;
   cursor: none;
 }
-.initials a:hover, .contact li a:hover {
+
+.initials a:hover,
+.contact li a:hover {
   cursor: none;
 }
 
@@ -95,13 +114,15 @@ p {
   height: 100vh;
   background: rgba(232, 230, 230, 0.3);
 }
+
 .title {
   position: absolute;
   top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.title > p {
+
+.title>p {
   line-height: 1.5em;
   text-align: left;
   font-size: 1.3em;
@@ -109,12 +130,14 @@ p {
   width: 80vw;
   margin-bottom: 20px;
 }
+
 .underline {
   border-bottom: 1px solid black;
   text-decoration: none;
   color: black;
   cursor: none;
 }
+
 .underline:hover {
   text-decoration: none;
   color: black;
@@ -128,7 +151,8 @@ p {
   max-width: 90vw;
   padding: 0;
 }
-.line{
+
+.line {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -137,15 +161,18 @@ p {
   height: 100px;
   margin-top: -100px;
 }
+
 .card-container {
   margin: 50px auto 100px;
 }
+
 .my-card {
   background: transparent;
   border: none;
   max-width: 90vw;
   margin: 50px auto 0;
 }
+
 h2 {
   font-family: 'Muli', sans-serif;
   margin: 30px 0 20px;
@@ -154,18 +181,22 @@ h2 {
   display: inline-block;
   font-size: 1.5em;
 }
+
 .card-p {
   font-size: 0.9em;
   font-weight: 100;
   text-align: left;
   line-height: 1.5em;
 }
+
 .card-p:nth-child(2) {
   margin-bottom: 20px;
 }
+
 .my-card-title {
   text-align: left;
 }
+
 .github {
   color: #212529;
   margin-left: 10px;
@@ -174,11 +205,13 @@ h2 {
   cursor: none;
 
 }
+
 .github:hover {
   color: #212529;
   text-decoration: none;
   cursor: none;
 }
+
 .site-img {
   width: 100%;
   height: 50vw;
@@ -187,6 +220,7 @@ h2 {
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
   cursor: none;
 }
+
 .site-img:hover {
   opacity: 0.6;
   cursor: none;
@@ -198,7 +232,9 @@ footer {
   background: rgba(232, 230, 230, 0.3);
   height: 300px;
 }
-.connect, .full-name {
+
+.connect,
+.full-name {
   margin: 0 auto;
   width: 80vw;
   padding-top: 20px;
@@ -206,15 +242,19 @@ footer {
   line-height: 1.5em;
   font-size: 1.1em;
 }
-.connect p:nth-child(1), .full-name p:nth-child(1) {
+
+.connect p:nth-child(1),
+.full-name p:nth-child(1) {
   font-weight: 400;
 }
+
 .copyright {
   margin: 90px auto 0;
   width: 80vw;
   font-size: 0.8em;
   font-weight: 300;
 }
+
 .copyright:before {
   content: "\00A9";
   font-size: 0.9em;
@@ -228,24 +268,28 @@ footer {
     top: 3vw;
     left: 3vw;
   }
+
   .contact {
     position: fixed;
     top: initial;
-    bottom: 3vw;    
+    bottom: 3vw;
     right: 3vw;
     height: 200px;
     width: 40px;
   }
+
   .contact li {
     margin-top: 2.5em;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     display: block;
   }
+
   .contact li a {
     font-weight: 300;
   }
-  .title > p {
+
+  .title>p {
     font-size: 1.8em;
   }
 
@@ -253,40 +297,48 @@ footer {
     margin: 80px auto 0;
   }
 }
+
 @media screen and (min-width: 766px) {
   .my-container {
     max-width: 85vw;
   }
+
   .card-container {
     margin: 50px auto 140px;
   }
+
   .site-img {
     height: 250px;
   }
+
   .my-card {
     margin: 90px auto 0;
   }
 }
+
 @media screen and (min-width: 992px) {
-  .title > p {
+  .title>p {
     font-size: 30px;
   }
+
   .card-container {
     margin: 50px auto 180px;
   }
+
   .site-img {
     height: 330px;
   }
+
   .my-card {
     margin: 130px auto 0;
   }
+
   h2 {
     font-weight: 400;
   }
 }
-@media screen and (min-width: 1200px) {
-  
-}
+
+@media screen and (min-width: 1200px) {}
 
 /* animation - showCard
 ---------------------------------- */
@@ -308,12 +360,14 @@ footer {
 .about-container {
   width: 100vw;
 }
+
 .about-content {
   width: 80vw;
   margin: 0 auto;
   padding: 190px 0 0;
 }
-.about-content > p {
+
+.about-content>p {
   line-height: 1.4em;
   text-align: left;
   font-size: 1.3em;
@@ -321,6 +375,7 @@ footer {
   width: 80vw;
   margin-bottom: 30px;
 }
+
 .stack {
   display: flex;
   align-items: center;
@@ -329,42 +384,51 @@ footer {
   align-content: space-between;
   margin: 80px 0;
 }
+
 .svg-inline--fa {
   opacity: 0.4;
   font-size: 2.5em;
   height: 30px;
   margin: 0 2px 20px;
 }
+
 .logo {
   filter: grayscale(100%);
   height: 30px;
   margin: 0 3px 20px;
 }
+
 .node {
   opacity: 0.5;
   margin: 0 5px 20px 0;
 }
-.jquery, .heroku {
+
+.jquery,
+.heroku {
   height: 27px;
 }
 
 @media screen and (min-width: 540px) {
-  .about-content > p {
+  .about-content>p {
     font-size: 1.5em;
   }
+
   .logo {
     height: 35px;
     margin: 0 5px 20px 0;
   }
+
   .node {
     margin: 0 9px 20px 0;
   }
-  .jquery, .heroku {
+
+  .jquery,
+  .heroku {
     height: 30px;
   }
+
   .svg-inline--fa {
     font-size: 3em;
     height: 35px;
   }
 }
-

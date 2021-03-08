@@ -1,5 +1,4 @@
-const cards = [
-  {
+const cards = [{
     title: "Book Search App",
     github: "https://github.com/yukanishijima/react-book-search",
     link: "https://for-book-lovers.herokuapp.com",
@@ -101,7 +100,7 @@ function generteCard() {
       aTag = "";
     }
 
-    return `<div class="col-12 px-2">
+    return `<div class="col-12 px-2 z-index">
               <div class="my-card showCard row align-items-end">
 
                 <div class="col-12 col-md-6">
@@ -121,7 +120,8 @@ function generteCard() {
 
               </div>
             </div>
-    `}).join("");
+    `
+  }).join("");
 
   cursorHover();
 };
